@@ -22,6 +22,6 @@ Las contribuciones son siempre bienvenidas. Si encuentras algún problema o tien
 
 ## Autores
 
-Cozzi Osvaldo
-Pizzini Abril
-Borgo Valentino
+Cozzi Osvaldo</br>
+Pizzini Abril</br>
+Borgo Valentino</br>
