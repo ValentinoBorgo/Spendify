@@ -14,7 +14,7 @@ Este repositorio contiene una app movil solamente disponible para el sistema ope
 
 ## Tecnologías utilizadas
 
-- [Android Studio] ![AndroidStudio](https://img.shields.io/badge/-AndroidStudio-333333?style=flat&logo=AndroidStudio)
+- ![AndroidStudio](https://img.shields.io/badge/-AndroidStudio-333333?style=flat&logo=AndroidStudio)
 
 ## Contribuciones
 
