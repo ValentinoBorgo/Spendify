@@ -4,4 +4,5 @@
     <string name="contraseña">Ingrese su contraseña</string>
     <string name="btnSalir">Salir</string>
     <string name="btnIngresar">Ingresar</string>
+    <string name="textView">Entraste</string>
 </resources>
