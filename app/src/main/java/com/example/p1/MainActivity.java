@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ingresar() {
+        EditText nombreEmail = findViewById(R.id.nombreEmail);
+        String Ne = nombreEmail.getText().toString();
+        EditText Contraseña = findViewById(R.id.contraseña);
+        String C = Contraseña.getText().toString();
+        Toast.makeText(this, Ne + " // " + C, Toast.LENGTH_SHORT).show();
         Intent menuPrincipal = new Intent(MainActivity.this, MenuPrincipal.class);
         startActivity(menuPrincipal);
     }
