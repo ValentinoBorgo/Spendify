@@ -14,7 +14,7 @@ Este repositorio contiene una app movil solamente disponible para el sistema ope
 
 ## Tecnologías utilizadas
 
-- [Android Studio](https://github.com/devicons/devicon/blob/master/icons/androidstudio/androidstudio-original.svg)
+- [Android Studio] (https://github.com/devicons/devicon/blob/master/icons/androidstudio/androidstudio-original.svg)
 
 ## Contribuciones
 
