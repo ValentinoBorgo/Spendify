@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este repositorio contiene una app movil solamente disponible para el sistema operativo android que tiene funciones de gestion y administracion de datos.
+Este repositorio contiene una app movil solamente disponible para el sistema operativo android que tiene funciones de gestion y administracion de gastos.
 
 ## Características
 
