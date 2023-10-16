@@ -54,6 +54,53 @@
                     android:text="✍"
                     android:visibility="visible"
                     tools:text="@string/cambiarTotal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="375dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:translationX="-35dp">
+
+                <TextView
+                    android:id="@+id/textGastoCategoria"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gasto:" />
+
+                <EditText
+                    android:id="@+id/totalCategoriaGasto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="........."
+                    android:text="@string/total" />
+
+                <Button
+                    android:id="@+id/btnCategoriaAceptar"
+                    android:layout_width="49dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Aceptar" />
+
+                <Button
+                    android:id="@+id/btnCategoriaElegir"
+                    android:layout_width="49dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Categoria" />
+
             </LinearLayout>
 
         </LinearLayout>
