@@ -73,7 +73,7 @@
                     android:text="Gasto:" />
 
                 <EditText
-                    android:id="@+id/totalCategoriaGasto"
+                    android:id="@+id/CategoriaGasto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="25dp"
@@ -81,7 +81,9 @@
                     android:layout_weight="1"
                     android:gravity="left"
                     android:hint="........."
-                    android:text="@string/total" />
+                    android:text="@string/total"
+                    android:autofillHints=""
+                    android:inputType="" />
 
                 <Button
                     android:id="@+id/btnCategoriaAceptar"

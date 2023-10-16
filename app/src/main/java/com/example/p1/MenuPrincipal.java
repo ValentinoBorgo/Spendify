@@ -7,11 +7,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuPrincipal extends AppCompatActivity {
 
     private TextView recibirUserView;
+    private String categoriaElegida;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,20 @@ public class MenuPrincipal extends AppCompatActivity {
 
         recibirUserView.setText("Saludos " + infoUser + " !");
 
+        Button btnCategoriaElegir = findViewById(R.id.btnCategoriaElegir);
+        Button btnCategoriaAceptar = findViewById(R.id.btnCategoriaAceptar);
+        btnCategoriaElegir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                elegirCategoria();
+            }
+        });
+        btnCategoriaAceptar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                agregarGasto();
+            }
+        });
         mensaje();
         modificarBalance();
     }
@@ -54,6 +71,58 @@ public class MenuPrincipal extends AppCompatActivity {
             }
         });
     }
+    private void elegirCategoria(){
+        final String[] categorias = {"Categoria1", "Categoria2","Categoria3","Categoria4", "Servicios", "Otros"};
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Selecciona una categoría")
+                .setItems(categorias, (dialog, which) -> {
+                    this.categoriaElegida = categorias[which];
+                });
 
-}
+        builder.create().show();
+    }
+    private boolean verificarGastoIngresadoCategoria(){
+        EditText categoriaGasto = findViewById(R.id.CategoriaGasto);
+        String gastoStr = categoriaGasto.getText().toString().trim();
+
+        if (gastoStr.isEmpty()) {
+            // El campo de gasto está vacío muestra error
+            categoriaGasto.setError("El gasto ingresado no puede estar vacío");
+            return false;
+        }
+
+        try {
+            double gasto = Double.parseDouble(gastoStr);
+
+            if (gasto <= 0) {
+                // El monto es menor o igual a 0, muestra un mensaje de error
+                categoriaGasto.setError("El gasto ingresado  debe ser mayor que 0");
+                return false;
+            }
+        } catch (NumberFormatException e) {
+            // No se pudo analizar el valor como un número válido, muestra un mensaje de error si es necesario
+            categoriaGasto.setError("El gasto ingresado  no es válido");
+            return false;
+        }
+
+        // El gasto ingresado  es válido, borra cualquier mensaje de error previo
+        categoriaGasto.setError(null);
+        return true;
+    }
+    private void agregarGasto() {
+        if(categoriaElegida!=null && !categoriaElegida.isEmpty()){
+            if(verificarGastoIngresadoCategoria()){
+
+                Toast toast = Toast.makeText(getApplicationContext(), "Gasto Guardado", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        }else{
+            Toast toast = Toast.makeText(getApplicationContext(), "No se guardo el gasto", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+
+    }
+    }
+
+
 
