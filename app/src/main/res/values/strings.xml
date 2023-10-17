@@ -5,4 +5,19 @@
     <string name="btnSalir">Salir</string>
     <string name="btnIngresar">Ingresar</string>
     <string name="bienvenida"></string>
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Spendify</string>
+    <string name="nav_header_subtitle">spendify.soporte@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Mi Perfil</string>
+    <string name="menu_balance">Mi Balance</string>
+
+    <string name="balance">Balance en Pesos $$ :</string>
+    <string name="total"></string>
+    <string name="cambiarTotal">✍</string>
 </resources>
