@@ -21,20 +21,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuPrincipal extends AppCompatActivity {
 
+    private  ActivityMenuPrincipalBinding binding;
+
     private AppBarConfiguration mAppBarConfiguration;
 
-    private ActivityMenuPrincipalBinding binding;
     private TextView recibirUserView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         binding = ActivityMenuPrincipalBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_menu_principal);
+        //setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMenuDesplegable.toolbar);
+        binding.appBarMenuDesplegable.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -44,9 +51,11 @@ public class MenuPrincipal extends AppCompatActivity {
                 R.id.nav_home, R.id.nav_profile, R.id.nav_balance)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu_desplegable);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+            //NO REPRESENTA UNA VISTA EN ESTA ACTIVIDAD
+            NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_navigation);
+            NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+            NavigationUI.setupWithNavController(navigationView, navController);
+
 
         EditText campoModificar = findViewById(R.id.total);
         campoModificar.setEnabled(false);
@@ -79,8 +88,10 @@ public class MenuPrincipal extends AppCompatActivity {
 
                 if(editar){
                     Toast toast = Toast.makeText(getApplicationContext(), "Edita tu balance actual", Toast.LENGTH_SHORT);
+                    toast.show();
                 }else{
                     Toast toast = Toast.makeText(getApplicationContext(), "Edicion finalizada", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
             }
         });
@@ -95,7 +106,7 @@ public class MenuPrincipal extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu_desplegable);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_navigation);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
