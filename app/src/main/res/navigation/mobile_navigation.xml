@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_balance"
-        android:name="com.example.p1.activity.ui.slideshow.SlideshowFragment"
+        android:name="com.example.p1.activity.ui.slideshow.BalanceFragment"
         android:label="@string/menu_balance"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_balance" />
 </navigation>

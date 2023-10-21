@@ -32,8 +32,8 @@ public class MenuPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         binding = ActivityMenuPrincipalBinding.inflate(getLayoutInflater());
-        setContentView(R.layout.activity_menu_principal);
-        //setContentView(binding.getRoot());
+        //setContentView(R.layout.activity_menu_principal);
+        setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMenuDesplegable.toolbar);
         binding.appBarMenuDesplegable.fab.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +100,7 @@ public class MenuPrincipal extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
+        getMenuInflater().inflate(R.menu.navegation_ajustes, menu);
         return true;
     }
 
