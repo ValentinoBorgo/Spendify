@@ -20,4 +20,8 @@
     <string name="balance">Balance en Pesos $$ :</string>
     <string name="total"></string>
     <string name="cambiarTotal">✍</string>
+
+    <string name="textGastoCategoria">Gasto</string>
+    <string name="btnCategoriaAceptar">Agregar</string>
+    <string name="btnCategoriaElegir">Categoria</string>
 </resources>

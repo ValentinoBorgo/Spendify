@@ -87,10 +87,10 @@ public class MenuPrincipal extends AppCompatActivity {
                 campoModificar.setEnabled(!editar);
 
                 if(editar){
-                    Toast toast = Toast.makeText(getApplicationContext(), "Edita tu balance actual", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), "Edicion Finalizada", Toast.LENGTH_SHORT);
                     toast.show();
                 }else{
-                    Toast toast = Toast.makeText(getApplicationContext(), "Edicion finalizada", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), "Edita tu presupuesto", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }
