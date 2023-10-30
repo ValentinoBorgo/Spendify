@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Spendify</string>
+    <string name="nombreEmail">Enter your name or email</string>
+    <string name="contraseña">Enter your password</string>
+    <string name="btnSalir">Exit</string>
+    <string name="btnIngresar">Enter</string>
+    <string name="bienvenida"></string>
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Spendify</string>
+    <string name="nav_header_subtitle">spendify.soporte@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_profile">Mi Profile</string>
+    <string name="menu_balance">Salary and expenses</string>
+
+    <string name="balance">Monthly Salary $$:</string>
+    <string name="total"></string>
+    <string name="cambiarTotal">✍</string>
+
+    <string name="textGastoCategoria">Spent</string>
+    <string name="btnCategoriaAceptar">Add</string>
+    <string name="btnCategoriaElegir">Category</string>
+    <string name="sueldoPerfil">"Salary of"</string>
+    <string name="sueldo">....</string>
+    <string name="listaGastos">Expense list :</string>
+    <string name="perfilNombre">Greetings </string>
+    <string name="textoGastos" />
+</resources>

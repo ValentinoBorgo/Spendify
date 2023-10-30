@@ -1,15 +1,23 @@
 package com.example.p1.data.model;
 
-public class Categoria {
-    private String nombreCategoria;
-    private Gasto g = new Gasto();
+import android.widget.Toast;
 
-    public void setG(Gasto g) {
-        this.g = g;
+public class Categoria {
+
+    private String nombreCategoria;
+    private double gasto;
+
+    public Categoria(String nombreCategoria, double gasto) {
+        this.nombreCategoria = nombreCategoria;
+        this.gasto = gasto;
     }
 
-    public Gasto getG() {
-        return g;
+    public double getGasto() {
+        return gasto;
+    }
+
+    public void setGasto(double gasto) {
+        this.gasto = gasto;
     }
 
     public String getNombreCategoria() {
@@ -17,5 +25,10 @@ public class Categoria {
     }
     public void setNombreCategoria(){
         this.nombreCategoria = nombreCategoria;
+    }
+
+    public void agregarGasto(double gasto) {
+        this.gasto = this.gasto + gasto;
+
     }
 }

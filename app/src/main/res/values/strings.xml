@@ -11,17 +11,22 @@
     <string name="nav_header_title">Spendify</string>
     <string name="nav_header_subtitle">spendify.soporte@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Ajustes</string>
 
-    <string name="menu_home">Home</string>
+
     <string name="menu_profile">Mi Perfil</string>
-    <string name="menu_balance">Mi Balance</string>
+    <string name="menu_balance">Sueldo y gastos</string>
 
-    <string name="balance">Balance en Pesos $$ :</string>
+    <string name="balance">Sueldo Mensual $$ :</string>
     <string name="total"></string>
     <string name="cambiarTotal">✍</string>
 
     <string name="textGastoCategoria">Gasto</string>
     <string name="btnCategoriaAceptar">Agregar</string>
     <string name="btnCategoriaElegir">Categoria</string>
+    <string name="sueldoPerfil">"Sueldo de "</string>
+    <string name="sueldo">....</string>
+    <string name="listaGastos">Lista de Gastos :</string>
+    <string name="perfilNombre">Saludos </string>
+    <string name="textoGastos" />
 </resources>
