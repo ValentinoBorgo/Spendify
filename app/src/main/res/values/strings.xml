@@ -29,4 +29,9 @@
     <string name="listaGastos">Lista de Gastos :</string>
     <string name="perfilNombre">Saludos </string>
     <string name="textoGastos" />
+    <string name="catCompras">Compras</string>
+    <string name="catServicios">Servicios</string>
+    <string name="catEntretenimiento">Entretenimiento</string>
+    <string name="catOtros">Otros</string>
+    <string name="btnMostrarGastos">Mostrar Gastos</string>
 </resources>

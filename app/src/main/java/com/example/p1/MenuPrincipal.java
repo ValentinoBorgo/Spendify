@@ -38,10 +38,10 @@ public class MenuPrincipal extends AppCompatActivity {
     private TextView recibirUserView;
 
     public String categoriaElegida;
-    private Categoria c1=new Categoria("Compras",0);
-    private Categoria c2=new Categoria("Servicios",0);
-    private Categoria c3=new Categoria("Entretenimiento",0);
-    private Categoria c4=new Categoria("Otros",0);
+    private Categoria c1 = new Categoria("Compras",0);
+    private Categoria c2 = new Categoria("Servicios",0);
+    private Categoria c3 = new Categoria("Entretenimiento",0);
+    private Categoria c4 = new Categoria("Otros",0);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
